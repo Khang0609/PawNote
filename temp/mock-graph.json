@@ -1,0 +1,1045 @@
+{
+  "nodes": [
+    {
+      "id": "node-1",
+      "title": "Dashboard",
+      "slug": "dashboard",
+      "position": {
+        "x": 691,
+        "y": -385
+      },
+      "size": {
+        "width": 147,
+        "height": 56
+      },
+      "type": "canvas",
+      "color": "#f59e0b",
+      "createdAt": 1782743878129,
+      "updatedAt": 1782750039966
+    },
+    {
+      "id": "node-2",
+      "title": "Note List",
+      "slug": "note-list",
+      "position": {
+        "x": -261,
+        "y": -723
+      },
+      "size": {
+        "width": 134,
+        "height": 57
+      },
+      "type": "text",
+      "createdAt": 1782667783453,
+      "updatedAt": 1782670959801
+    },
+    {
+      "id": "node-3",
+      "title": "Graph View",
+      "slug": "graph-view",
+      "position": {
+        "x": 135,
+        "y": -114
+      },
+      "size": {
+        "width": 121,
+        "height": 49
+      },
+      "type": "group",
+      "color": "#10b981",
+      "createdAt": 1782715474834,
+      "updatedAt": 1782721301446
+    },
+    {
+      "id": "node-4",
+      "title": "Canvas Editor",
+      "slug": "canvas-editor",
+      "position": {
+        "x": -591,
+        "y": 18
+      },
+      "size": {
+        "width": 132,
+        "height": 48
+      },
+      "type": "group",
+      "createdAt": 1782745405384,
+      "updatedAt": 1782749862719
+    },
+    {
+      "id": "node-5",
+      "title": "Markdown Parser",
+      "slug": "markdown-parser",
+      "position": {
+        "x": 968,
+        "y": -699
+      },
+      "size": {
+        "width": 146,
+        "height": 57
+      },
+      "type": "canvas",
+      "color": "#10b981",
+      "createdAt": 1782682229230,
+      "updatedAt": 1782682592641
+    },
+    {
+      "id": "node-6",
+      "title": "User Settings",
+      "slug": "user-settings",
+      "position": {
+        "x": 767,
+        "y": -660
+      },
+      "size": {
+        "width": 140,
+        "height": 51
+      },
+      "type": "group",
+      "color": "#10b981",
+      "createdAt": 1782725995630,
+      "updatedAt": 1782729172652
+    },
+    {
+      "id": "node-7",
+      "title": "Database Schema",
+      "slug": "database-schema",
+      "position": {
+        "x": 961,
+        "y": -344
+      },
+      "size": {
+        "width": 155,
+        "height": 55
+      },
+      "type": "group",
+      "createdAt": 1782735566289,
+      "updatedAt": 1782745445981
+    },
+    {
+      "id": "node-8",
+      "title": "API Client",
+      "slug": "api-client",
+      "position": {
+        "x": 624,
+        "y": -388
+      },
+      "size": {
+        "width": 166,
+        "height": 57
+      },
+      "type": "canvas",
+      "color": "#ec4899",
+      "createdAt": 1782721097749,
+      "updatedAt": 1782722477837
+    },
+    {
+      "id": "node-9",
+      "title": "Authentication",
+      "slug": "authentication",
+      "position": {
+        "x": -5,
+        "y": -654
+      },
+      "size": {
+        "width": 144,
+        "height": 46
+      },
+      "type": "canvas",
+      "color": "#ef4444",
+      "createdAt": 1782665436346,
+      "updatedAt": 1782673973783
+    },
+    {
+      "id": "node-10",
+      "title": "Session Manager",
+      "slug": "session-manager",
+      "position": {
+        "x": -331,
+        "y": -131
+      },
+      "size": {
+        "width": 101,
+        "height": 44
+      },
+      "type": "text",
+      "color": "#10b981",
+      "createdAt": 1782716966834,
+      "updatedAt": 1782723527852
+    },
+    {
+      "id": "node-11",
+      "title": "File Uploader",
+      "slug": "file-uploader",
+      "position": {
+        "x": 607,
+        "y": 229
+      },
+      "size": {
+        "width": 133,
+        "height": 53
+      },
+      "type": "group",
+      "color": "#ec4899",
+      "createdAt": 1782647409301,
+      "updatedAt": 1782653234012
+    },
+    {
+      "id": "node-12",
+      "title": "Image Processor",
+      "slug": "image-processor",
+      "position": {
+        "x": -499,
+        "y": -619
+      },
+      "size": {
+        "width": 107,
+        "height": 41
+      },
+      "type": "group",
+      "color": "#f59e0b",
+      "createdAt": 1782700027803,
+      "updatedAt": 1782704102373
+    },
+    {
+      "id": "node-13",
+      "title": "PDF Exporter",
+      "slug": "pdf-exporter",
+      "position": {
+        "x": 819,
+        "y": 603
+      },
+      "size": {
+        "width": 137,
+        "height": 50
+      },
+      "type": "text",
+      "createdAt": 1782708452658,
+      "updatedAt": 1782711368307
+    },
+    {
+      "id": "node-14",
+      "title": "Search Indexer",
+      "slug": "search-indexer",
+      "position": {
+        "x": -634,
+        "y": -515
+      },
+      "size": {
+        "width": 158,
+        "height": 55
+      },
+      "type": "group",
+      "color": "#f97316",
+      "createdAt": 1782650517222,
+      "updatedAt": 1782653487332
+    },
+    {
+      "id": "node-15",
+      "title": "Tag Manager",
+      "slug": "tag-manager",
+      "position": {
+        "x": 325,
+        "y": 386
+      },
+      "size": {
+        "width": 129,
+        "height": 41
+      },
+      "type": "text",
+      "color": "#ec4899",
+      "createdAt": 1782676523839,
+      "updatedAt": 1782685826494
+    },
+    {
+      "id": "node-16",
+      "title": "Theme Config",
+      "slug": "theme-config",
+      "position": {
+        "x": -798,
+        "y": 698
+      },
+      "size": {
+        "width": 161,
+        "height": 59
+      },
+      "type": "group",
+      "color": "#8b5cf6",
+      "createdAt": 1782687170099,
+      "updatedAt": 1782689185294
+    },
+    {
+      "id": "node-17",
+      "title": "Keyboard Shortcuts",
+      "slug": "keyboard-shortcuts",
+      "position": {
+        "x": -664,
+        "y": 144
+      },
+      "size": {
+        "width": 177,
+        "height": 47
+      },
+      "type": "text",
+      "color": "#ef4444",
+      "createdAt": 1782714965329,
+      "updatedAt": 1782717742215
+    },
+    {
+      "id": "node-18",
+      "title": "Plugin Loader",
+      "slug": "plugin-loader",
+      "position": {
+        "x": -184,
+        "y": -547
+      },
+      "size": {
+        "width": 121,
+        "height": 59
+      },
+      "type": "canvas",
+      "color": "#ef4444",
+      "createdAt": 1782666751423,
+      "updatedAt": 1782668945069
+    },
+    {
+      "id": "node-19",
+      "title": "Sync Service",
+      "slug": "sync-service",
+      "position": {
+        "x": 486,
+        "y": -426
+      },
+      "size": {
+        "width": 162,
+        "height": 47
+      },
+      "type": "text",
+      "color": "#ef4444",
+      "createdAt": 1782657464578,
+      "updatedAt": 1782661352874
+    },
+    {
+      "id": "node-20",
+      "title": "Conflict Resolver",
+      "slug": "conflict-resolver",
+      "position": {
+        "x": -109,
+        "y": -441
+      },
+      "size": {
+        "width": 126,
+        "height": 53
+      },
+      "type": "canvas",
+      "createdAt": 1782743465480,
+      "updatedAt": 1782752606079
+    },
+    {
+      "id": "node-21",
+      "title": "Trash Bin",
+      "slug": "trash-bin",
+      "position": {
+        "x": -701,
+        "y": 538
+      },
+      "size": {
+        "width": 139,
+        "height": 48
+      },
+      "type": "text",
+      "color": "#f59e0b",
+      "createdAt": 1782694289995,
+      "updatedAt": 1782702273199
+    },
+    {
+      "id": "node-22",
+      "title": "Archived Notes",
+      "slug": "archived-notes",
+      "position": {
+        "x": -232,
+        "y": -146
+      },
+      "size": {
+        "width": 156,
+        "height": 45
+      },
+      "type": "canvas",
+      "color": "#8b5cf6",
+      "createdAt": 1782653001803,
+      "updatedAt": 1782662615069
+    },
+    {
+      "id": "node-23",
+      "title": "Collaborator List",
+      "slug": "collaborator-list",
+      "position": {
+        "x": -557,
+        "y": 602
+      },
+      "size": {
+        "width": 103,
+        "height": 58
+      },
+      "type": "group",
+      "color": "#ec4899",
+      "createdAt": 1782648606283,
+      "updatedAt": 1782656795461
+    },
+    {
+      "id": "node-24",
+      "title": "Activity Log",
+      "slug": "activity-log",
+      "position": {
+        "x": -434,
+        "y": 436
+      },
+      "size": {
+        "width": 108,
+        "height": 44
+      },
+      "type": "group",
+      "color": "#14b8a6",
+      "createdAt": 1782662525769,
+      "updatedAt": 1782665028734
+    },
+    {
+      "id": "node-25",
+      "title": "Notification Manager",
+      "slug": "notification-manager",
+      "position": {
+        "x": 294,
+        "y": 671
+      },
+      "size": {
+        "width": 142,
+        "height": 49
+      },
+      "type": "text",
+      "color": "#8b5cf6",
+      "createdAt": 1782735963639,
+      "updatedAt": 1782737731514
+    },
+    {
+      "id": "node-26",
+      "title": "Backup System",
+      "slug": "backup-system",
+      "position": {
+        "x": -825,
+        "y": 284
+      },
+      "size": {
+        "width": 123,
+        "height": 45
+      },
+      "type": "text",
+      "createdAt": 1782665088915,
+      "updatedAt": 1782671003143
+    },
+    {
+      "id": "node-27",
+      "title": "Import Wizard",
+      "slug": "import-wizard",
+      "position": {
+        "x": 762,
+        "y": 727
+      },
+      "size": {
+        "width": 155,
+        "height": 57
+      },
+      "type": "canvas",
+      "color": "#ef4444",
+      "createdAt": 1782705746717,
+      "updatedAt": 1782706342174
+    },
+    {
+      "id": "node-28",
+      "title": "Export System",
+      "slug": "export-system",
+      "position": {
+        "x": -843,
+        "y": -194
+      },
+      "size": {
+        "width": 141,
+        "height": 56
+      },
+      "type": "text",
+      "color": "#f59e0b",
+      "createdAt": 1782662084401,
+      "updatedAt": 1782664232545
+    },
+    {
+      "id": "node-29",
+      "title": "Analytics Dashboard",
+      "slug": "analytics-dashboard",
+      "position": {
+        "x": -582,
+        "y": -382
+      },
+      "size": {
+        "width": 156,
+        "height": 50
+      },
+      "type": "text",
+      "color": "#3b82f6",
+      "createdAt": 1782735535186,
+      "updatedAt": 1782736616087
+    },
+    {
+      "id": "node-30",
+      "title": "System Health",
+      "slug": "system-health",
+      "position": {
+        "x": -7,
+        "y": 103
+      },
+      "size": {
+        "width": 169,
+        "height": 58
+      },
+      "type": "group",
+      "color": "#10b981",
+      "createdAt": 1782718327381,
+      "updatedAt": 1782718349830
+    },
+    {
+      "id": "node-31",
+      "title": "Memory Cache",
+      "slug": "memory-cache",
+      "position": {
+        "x": -339,
+        "y": -156
+      },
+      "size": {
+        "width": 160,
+        "height": 42
+      },
+      "type": "group",
+      "color": "#ef4444",
+      "createdAt": 1782648197299,
+      "updatedAt": 1782652273693
+    },
+    {
+      "id": "node-32",
+      "title": "Local Storage",
+      "slug": "local-storage",
+      "position": {
+        "x": 827,
+        "y": -23
+      },
+      "size": {
+        "width": 146,
+        "height": 47
+      },
+      "type": "text",
+      "createdAt": 1782666139622,
+      "updatedAt": 1782670106692
+    },
+    {
+      "id": "node-33",
+      "title": "IndexedDB Wrapper",
+      "slug": "indexeddb-wrapper",
+      "position": {
+        "x": 825,
+        "y": 370
+      },
+      "size": {
+        "width": 149,
+        "height": 51
+      },
+      "type": "group",
+      "color": "#f59e0b",
+      "createdAt": 1782694392265,
+      "updatedAt": 1782698666950
+    },
+    {
+      "id": "node-34",
+      "title": "Web Worker Manager",
+      "slug": "web-worker-manager",
+      "position": {
+        "x": 154,
+        "y": 405
+      },
+      "size": {
+        "width": 133,
+        "height": 57
+      },
+      "type": "canvas",
+      "color": "#10b981",
+      "createdAt": 1782664128402,
+      "updatedAt": 1782667326422
+    },
+    {
+      "id": "node-35",
+      "title": "Service Worker",
+      "slug": "service-worker",
+      "position": {
+        "x": 815,
+        "y": -120
+      },
+      "size": {
+        "width": 116,
+        "height": 46
+      },
+      "type": "text",
+      "color": "#14b8a6",
+      "createdAt": 1782671504663,
+      "updatedAt": 1782677192288
+    },
+    {
+      "id": "node-36",
+      "title": "Audio Recorder",
+      "slug": "audio-recorder",
+      "position": {
+        "x": 239,
+        "y": -298
+      },
+      "size": {
+        "width": 121,
+        "height": 40
+      },
+      "type": "text",
+      "color": "#ec4899",
+      "createdAt": 1782744617920,
+      "updatedAt": 1782747341487
+    },
+    {
+      "id": "node-37",
+      "title": "Drawing Board",
+      "slug": "drawing-board",
+      "position": {
+        "x": -644,
+        "y": 565
+      },
+      "size": {
+        "width": 111,
+        "height": 42
+      },
+      "type": "canvas",
+      "color": "#8b5cf6",
+      "createdAt": 1782655668960,
+      "updatedAt": 1782665287547
+    },
+    {
+      "id": "node-38",
+      "title": "Mindmap Renderer",
+      "slug": "mindmap-renderer",
+      "position": {
+        "x": -330,
+        "y": 48
+      },
+      "size": {
+        "width": 131,
+        "height": 48
+      },
+      "type": "canvas",
+      "color": "#ef4444",
+      "createdAt": 1782709608105,
+      "updatedAt": 1782713844400
+    },
+    {
+      "id": "node-39",
+      "title": "Code Sandbox",
+      "slug": "code-sandbox",
+      "position": {
+        "x": 719,
+        "y": 682
+      },
+      "size": {
+        "width": 170,
+        "height": 54
+      },
+      "type": "canvas",
+      "color": "#10b981",
+      "createdAt": 1782739287320,
+      "updatedAt": 1782743760283
+    },
+    {
+      "id": "node-40",
+      "title": "Diagram Maker",
+      "slug": "diagram-maker",
+      "position": {
+        "x": 291,
+        "y": -29
+      },
+      "size": {
+        "width": 128,
+        "height": 48
+      },
+      "type": "canvas",
+      "createdAt": 1782657102284,
+      "updatedAt": 1782665377018
+    },
+    {
+      "id": "node-41",
+      "title": "Math Formulator",
+      "slug": "math-formulator",
+      "position": {
+        "x": -776,
+        "y": -309
+      },
+      "size": {
+        "width": 160,
+        "height": 44
+      },
+      "type": "text",
+      "color": "#ec4899",
+      "createdAt": 1782653039474,
+      "updatedAt": 1782653076509
+    },
+    {
+      "id": "node-42",
+      "title": "Table Editor",
+      "slug": "table-editor",
+      "position": {
+        "x": 206,
+        "y": -557
+      },
+      "size": {
+        "width": 110,
+        "height": 58
+      },
+      "type": "canvas",
+      "color": "#f59e0b",
+      "createdAt": 1782741172110,
+      "updatedAt": 1782747053750
+    },
+    {
+      "id": "node-43",
+      "title": "Timeline View",
+      "slug": "timeline-view",
+      "position": {
+        "x": -813,
+        "y": -85
+      },
+      "size": {
+        "width": 152,
+        "height": 54
+      },
+      "type": "group",
+      "color": "#14b8a6",
+      "createdAt": 1782705433431,
+      "updatedAt": 1782712070707
+    },
+    {
+      "id": "node-44",
+      "title": "Calendar Integrator",
+      "slug": "calendar-integrator",
+      "position": {
+        "x": 733,
+        "y": -674
+      },
+      "size": {
+        "width": 143,
+        "height": 53
+      },
+      "type": "group",
+      "color": "#8b5cf6",
+      "createdAt": 1782656906889,
+      "updatedAt": 1782663635431
+    },
+    {
+      "id": "node-45",
+      "title": "Task Tracker",
+      "slug": "task-tracker",
+      "position": {
+        "x": -155,
+        "y": 38
+      },
+      "size": {
+        "width": 159,
+        "height": 48
+      },
+      "type": "group",
+      "color": "#14b8a6",
+      "createdAt": 1782661105140,
+      "updatedAt": 1782661472328
+    },
+    {
+      "id": "node-46",
+      "title": "Reminder Engine",
+      "slug": "reminder-engine",
+      "position": {
+        "x": -478,
+        "y": -505
+      },
+      "size": {
+        "width": 167,
+        "height": 47
+      },
+      "type": "group",
+      "createdAt": 1782652173319,
+      "updatedAt": 1782657713921
+    },
+    {
+      "id": "node-47",
+      "title": "Link Previewer",
+      "slug": "link-previewer",
+      "position": {
+        "x": -658,
+        "y": -565
+      },
+      "size": {
+        "width": 124,
+        "height": 44
+      },
+      "type": "canvas",
+      "color": "#ec4899",
+      "createdAt": 1782654527391,
+      "updatedAt": 1782663384553
+    },
+    {
+      "id": "node-48",
+      "title": "OCR Engine",
+      "slug": "ocr-engine",
+      "position": {
+        "x": -714,
+        "y": 336
+      },
+      "size": {
+        "width": 122,
+        "height": 45
+      },
+      "type": "text",
+      "createdAt": 1782730223423,
+      "updatedAt": 1782733787373
+    },
+    {
+      "id": "node-49",
+      "title": "AI Summarizer",
+      "slug": "ai-summarizer",
+      "position": {
+        "x": -808,
+        "y": 741
+      },
+      "size": {
+        "width": 119,
+        "height": 50
+      },
+      "type": "group",
+      "color": "#14b8a6",
+      "createdAt": 1782681119248,
+      "updatedAt": 1782689494859
+    },
+    {
+      "id": "node-50",
+      "title": "Translator Service",
+      "slug": "translator-service",
+      "position": {
+        "x": 19,
+        "y": -352
+      },
+      "size": {
+        "width": 137,
+        "height": 52
+      },
+      "type": "canvas",
+      "createdAt": 1782665623504,
+      "updatedAt": 1782667020952
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-node-40-to-node-15",
+      "source": "node-40",
+      "target": "node-15",
+      "type": "bi-directional"
+    },
+    {
+      "id": "edge-node-24-to-node-2",
+      "source": "node-24",
+      "target": "node-2",
+      "type": "bi-directional",
+      "label": "relates_to"
+    },
+    {
+      "id": "edge-node-23-to-node-24",
+      "source": "node-23",
+      "target": "node-24",
+      "type": "bi-directional",
+      "label": "implements"
+    },
+    {
+      "id": "edge-node-20-to-node-17",
+      "source": "node-20",
+      "target": "node-17",
+      "type": "directional",
+      "label": "requires"
+    },
+    {
+      "id": "edge-node-41-to-node-45",
+      "source": "node-41",
+      "target": "node-45",
+      "type": "directional",
+      "label": "requires"
+    },
+    {
+      "id": "edge-node-41-to-node-34",
+      "source": "node-41",
+      "target": "node-34",
+      "type": "bi-directional"
+    },
+    {
+      "id": "edge-node-24-to-node-16",
+      "source": "node-24",
+      "target": "node-16",
+      "type": "directional",
+      "label": "references"
+    },
+    {
+      "id": "edge-node-3-to-node-1",
+      "source": "node-3",
+      "target": "node-1",
+      "type": "bi-directional",
+      "label": "implements"
+    },
+    {
+      "id": "edge-node-45-to-node-36",
+      "source": "node-45",
+      "target": "node-36",
+      "type": "bi-directional",
+      "label": "relates_to"
+    },
+    {
+      "id": "edge-node-48-to-node-49",
+      "source": "node-48",
+      "target": "node-49",
+      "type": "bi-directional",
+      "label": "relates_to"
+    },
+    {
+      "id": "edge-node-41-to-node-40",
+      "source": "node-41",
+      "target": "node-40",
+      "type": "bi-directional",
+      "label": "references"
+    },
+    {
+      "id": "edge-node-11-to-node-24",
+      "source": "node-11",
+      "target": "node-24",
+      "type": "directional",
+      "label": "relates_to"
+    },
+    {
+      "id": "edge-node-5-to-node-9",
+      "source": "node-5",
+      "target": "node-9",
+      "type": "bi-directional",
+      "label": "part_of"
+    },
+    {
+      "id": "edge-node-6-to-node-34",
+      "source": "node-6",
+      "target": "node-34",
+      "type": "bi-directional",
+      "label": "implements"
+    },
+    {
+      "id": "edge-node-38-to-node-16",
+      "source": "node-38",
+      "target": "node-16",
+      "type": "directional"
+    },
+    {
+      "id": "edge-node-26-to-node-12",
+      "source": "node-26",
+      "target": "node-12",
+      "type": "bi-directional",
+      "label": "part_of"
+    },
+    {
+      "id": "edge-node-27-to-node-32",
+      "source": "node-27",
+      "target": "node-32",
+      "type": "directional",
+      "label": "explains"
+    },
+    {
+      "id": "edge-node-14-to-node-21",
+      "source": "node-14",
+      "target": "node-21",
+      "type": "directional"
+    },
+    {
+      "id": "edge-node-49-to-node-15",
+      "source": "node-49",
+      "target": "node-15",
+      "type": "directional"
+    },
+    {
+      "id": "edge-node-44-to-node-26",
+      "source": "node-44",
+      "target": "node-26",
+      "type": "directional"
+    },
+    {
+      "id": "edge-node-3-to-node-13",
+      "source": "node-3",
+      "target": "node-13",
+      "type": "directional"
+    },
+    {
+      "id": "edge-node-25-to-node-41",
+      "source": "node-25",
+      "target": "node-41",
+      "type": "bi-directional"
+    },
+    {
+      "id": "edge-node-22-to-node-50",
+      "source": "node-22",
+      "target": "node-50",
+      "type": "bi-directional"
+    },
+    {
+      "id": "edge-node-16-to-node-35",
+      "source": "node-16",
+      "target": "node-35",
+      "type": "bi-directional",
+      "label": "implements"
+    },
+    {
+      "id": "edge-node-35-to-node-9",
+      "source": "node-35",
+      "target": "node-9",
+      "type": "directional"
+    },
+    {
+      "id": "edge-node-2-to-node-45",
+      "source": "node-2",
+      "target": "node-45",
+      "type": "bi-directional",
+      "label": "implements"
+    },
+    {
+      "id": "edge-node-6-to-node-33",
+      "source": "node-6",
+      "target": "node-33",
+      "type": "directional",
+      "label": "implements"
+    },
+    {
+      "id": "edge-node-9-to-node-19",
+      "source": "node-9",
+      "target": "node-19",
+      "type": "directional",
+      "label": "implements"
+    },
+    {
+      "id": "edge-node-1-to-node-10",
+      "source": "node-1",
+      "target": "node-10",
+      "type": "bi-directional",
+      "label": "part_of"
+    },
+    {
+      "id": "edge-node-28-to-node-1",
+      "source": "node-28",
+      "target": "node-1",
+      "type": "bi-directional",
+      "label": "relates_to"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+    "name": "@pawnote/database",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"No tests defined in database\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@pawnote/types": "workspace:*",
+        "dotenv": "^17.4.2",
+        "drizzle-orm": "^0.45.2",
+        "wrangler": "^4.4.0"
+    },
+    "devDependencies": {
+        "drizzle-kit": "^0.31.10",
+        "tsx": "^4.22.4"
+    }
+}
