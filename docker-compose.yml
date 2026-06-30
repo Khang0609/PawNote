@@ -1,0 +1,79 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+      # Đổi thành "production" để chạy môi trường production
+      target: development
+    # Lệnh chạy tương ứng:
+    # - Development: pnpm --filter web dev
+    # - Production: pnpm --filter web start
+    command: pnpm --filter web dev
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - NODE_ENV=development
+    develop:
+      watch:
+        - action: sync
+          path: ./apps/web
+          target: /app/apps/web
+          ignore:
+            - node_modules/
+            - .next/
+        - action: sync
+          path: ./packages/shared/ui
+          target: /app/packages/shared/ui
+          ignore:
+            - node_modules/
+        - action: sync
+          path: ./packages/shared/types
+          target: /app/packages/shared/types
+          ignore:
+            - node_modules/
+        - action: rebuild
+          path: package.json
+        - action: rebuild
+          path: pnpm-lock.yaml
+
+  api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+      # Đổi thành "production" để chạy môi trường production
+      target: development
+    # Lệnh chạy tương ứng:
+    # - Development: pnpm --filter api dev --ip 0.0.0.0 --port 8787
+    # - Production: npx wrangler dev apps/api/dist/index.js --ip 0.0.0.0 --port 8787
+    command: pnpm --filter api dev --ip 0.0.0.0 --port 8787
+    ports:
+      - "8787:8787"
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./apps/api/.wrangler:/app/apps/api/.wrangler
+    develop:
+      watch:
+        - action: sync
+          path: ./apps/api
+          target: /app/apps/api
+          ignore:
+            - node_modules/
+            - .wrangler/
+        - action: sync
+          path: ./packages/database
+          target: /app/packages/database
+          ignore:
+            - node_modules/
+        - action: sync
+          path: ./packages/repositories
+          target: /app/packages/repositories
+          ignore:
+            - node_modules/
+        - action: rebuild
+          path: package.json
+        - action: rebuild
+          path: pnpm-lock.yaml
+
+

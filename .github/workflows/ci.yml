@@ -1,0 +1,98 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    branches:
+      - main
+      - develop
+
+jobs:
+  ci:
+    name: Lint, Test, Build & Docker Verification
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetch all history for branch and commit comparison
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'pnpm'
+
+      - name: Install workspace dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Determine Git Base Ref for Turborepo
+        id: turbo-ref
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            echo "Comparing against PR base ref: origin/${{ github.base_ref }}"
+            echo "BASE=origin/${{ github.base_ref }}" >> $GITHUB_ENV
+          else
+            # For pushes to main/develop, compare against previous commit
+            if git rev-parse HEAD~1 >/dev/null 2>&1; then
+              echo "BASE=HEAD~1" >> $GITHUB_ENV
+            else
+              echo "BASE=HEAD" >> $GITHUB_ENV
+            fi
+          fi
+        shell: bash
+
+      - name: Lint Affected Packages
+        env:
+          TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+          TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+        run: pnpm turbo run lint --filter=[...$BASE]
+
+      - name: Typecheck Affected Packages
+        env:
+          TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+          TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+        run: pnpm turbo run check-types --filter=[...$BASE]
+
+      - name: Test Affected Packages
+        env:
+          TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+          TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+        run: pnpm turbo run test --filter=[...$BASE]
+
+      - name: Build Affected Packages
+        env:
+          TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+          TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+        run: pnpm turbo run build --filter=[...$BASE]
+
+      - name: Verify Docker Builds for Affected Applications
+        run: |
+          # Get list of affected tasks in JSON format
+          AFFECTED_JSON=$(pnpm turbo run build --filter=[...$BASE] --dry-run=json)
+          
+          # Check if the "api" app or any of its dependencies are affected
+          if echo "$AFFECTED_JSON" | jq -e '.tasks[] | select(.package == "api")' >/dev/null; then
+            echo "🚀 [Docker Build] 'api' is affected. Building Docker image..."
+            docker build -t pawnote-api:latest -f apps/api/Dockerfile .
+          else
+            echo "⏭️ [Docker Build] 'api' is unaffected. Skipping build."
+          fi
+          
+          # Check if the "web" app or any of its dependencies are affected
+          if echo "$AFFECTED_JSON" | jq -e '.tasks[] | select(.package == "web")' >/dev/null; then
+            echo "🚀 [Docker Build] 'web' is affected. Building Docker image..."
+            docker build -t pawnote-web:latest -f apps/web/Dockerfile .
+          else
+            echo "⏭️ [Docker Build] 'web' is unaffected. Skipping build."
+          fi
+        shell: bash
