@@ -53,30 +53,30 @@ jobs:
         env:
           TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
           TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
-        run: pnpm turbo run lint --filter=[...$BASE]
+        run: pnpm turbo run lint --filter=[$BASE]...
 
       - name: Typecheck Affected Packages
         env:
           TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
           TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
-        run: pnpm turbo run check-types --filter=[...$BASE]
+        run: pnpm turbo run check-types --filter=[$BASE]...
 
       - name: Test Affected Packages
         env:
           TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
           TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
-        run: pnpm turbo run test --filter=[...$BASE]
+        run: pnpm turbo run test --filter=[$BASE]...
 
       - name: Build Affected Packages
         env:
           TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
           TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
-        run: pnpm turbo run build --filter=[...$BASE]
+        run: pnpm turbo run build --filter=[$BASE]...
 
       - name: Verify Docker Builds for Affected Applications
         run: |
           # Get list of affected tasks in JSON format
-          AFFECTED_JSON=$(pnpm turbo run build --filter=[...$BASE] --dry-run=json)
+          AFFECTED_JSON=$(pnpm turbo run build --filter=[$BASE]... --dry-run=json)
           
           # Check if the "api" app or any of its dependencies are affected
           if echo "$AFFECTED_JSON" | jq -e '.tasks[] | select(.package == "api")' >/dev/null; then
