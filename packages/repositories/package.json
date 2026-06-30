@@ -1,0 +1,19 @@
+{
+  "name": "@pawnote/repositories",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@pawnote/database": "workspace:*",
+    "@pawnote/types": "workspace:*",
+    "drizzle-orm": "catalog:"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "typescript": "5.9.2"
+  }
+}
